@@ -28,7 +28,7 @@ public class SaveToDB {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
             if (connection == null || connection.isClosed() ) {
-                connection = DriverManager.getConnection("jdbc:oracle:thin:@192.168.142.128:1521:orcl", "system", "12345");
+                connection = DriverManager.getConnection("jdbc:oracle:thin:@192.168.142.128:1521:orcl", "user", "pass");
             }
 
 
